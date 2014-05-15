@@ -18,7 +18,7 @@ all:  $(OBJ)
 	$(CC) -c $(CFLAGS) $*.c -o $*.o
 
 clean:
-	rm $(OBJ)
+	rm -f $(OBJ) sim *.vtk
 
 helper.o      : helper.h 
 init.o        : helper.h init.h 
